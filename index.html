@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>WebGL Demo</title>
+    <link rel="stylesheet" href="../webgl.css" type="text/css">
+    <style>
+      #aa {
+        background-color:#f44336; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 40px;
+    }
+    #aa2 {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 40px;
+    }
+    #aa4 {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 40px;
+    }
+    #aa3 {
+        background-color: #555555; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 55px;
+    }
+    </style>
+  </head>
+
+  <body style="background-image:url('x.jpg')">
+    <audio id = "bb" autoplay loop="true">
+      <source src="animals.mp3" type="audio/mpeg">
+        </audio>
+        <audio id = "bb2">
+            <source src="crash.wav" type="audio/wav">
+              </audio>
+    <center>
+    <button  id = "aa3" style="visibility:visible;" type="button">TUNNEL RUSH</button>
+    <br/>
+    <br/>
+    <canvas style="" id="glcanvas" width="800" height="600"></canvas>
+      <br/>
+      <br/>
+      <button  id = "aa2" style="visibility:visible;" type="button">0.0</button>
+      &nbsp; &nbsp; 
+      <button  id = "aa4" style="visibility:visible;" type="button">Level = 1</button>
+      <br/>
+      <br/>
+      <button  id = "aa" style="visibility:hidden;" type="button" onClick="window.location.reload()">Restart game</button>
+    </center>
+  </body>
+
+  <script src="./gl-matrix.js"></script>
+  <script src="obstacle.js"></script>
+  <script src="obstacle2.js"></script>
+  <script src="tunnel.js"></script>
+  <script src="webgl-demo.js"></script>
+
+  </html>
